@@ -8,17 +8,16 @@ datasource db {
 }
 
 model Subscription {
-  id               String   @id @default(cuid())
-  size             String
-  content          String
-  interval         String
-  active           Boolean  @default(true)
-  amount_total     Decimal  @db.Money
-  delivery_address String
-  createdAt        DateTime @default(now()) @map(name: "created_at")
-  updatedAt        DateTime @updatedAt @map(name: "updated_at")
-  subscriber       User     @relation(fields: [subscriberId], references: [id])
-  subscriberId     String
+  id           String   @id @default(cuid())
+  size         String
+  content      String
+  interval     String
+  active       Boolean  @default(true)
+  amount_total Decimal  @db.Money
+  createdAt    DateTime @default(now()) @map(name: "created_at")
+  updatedAt    DateTime @updatedAt @map(name: "updated_at")
+  subscriber   User     @relation(fields: [subscriberId], references: [id])
+  subscriberId String
 
   @@map(name: "subscriptions")
 }
