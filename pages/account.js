@@ -44,7 +44,7 @@ export default function Account() {
 
 	return (
 		<Layout title={`${session.user.name} | Account`}>
-			<div className="flex flex-col sm:flex-row justify-items-center m-auto my-10 max-w-7xl">
+			<div className="flex flex-col sm:flex-row justify-items-center m-auto py-10 max-w-7xl">
 				<div className="bg-gray-100 sm:rounded-l-xl flex flex-col items-center px-4 py-2 mb-4">
 					<div>
 						{session.user.image ? (

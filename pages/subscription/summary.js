@@ -5,6 +5,7 @@ import { SubscriptionContext } from "../../contexts/SubscriptionContext";
 import AccountDetails from "../../components/AccountDetails";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import SubscriptionStep from "../../components/SubscriptionStep";
 
 function Summary() {
 	const { contents, size, frequency, clearSubscription } =
@@ -84,6 +85,7 @@ function Summary() {
 
 	return (
 		<Layout title="Step 4 - Summary">
+			<SubscriptionStep step={4} />
 			<h1 className="text-4xl font-semibold text-center mb-14">
 				Subscription Summary
 			</h1>

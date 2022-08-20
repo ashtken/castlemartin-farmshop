@@ -5,7 +5,7 @@ import Link from "next/link";
 function Unsuccessful() {
 	return (
 		<Layout title="Error, Please Try Again | Castlemartin Farmshop">
-			<div className="flex justify-center my-24">
+			<div className="flex justify-center py-24">
 				<div className="inline-flex items-center flex-col">
 					<div>
 						<XIcon

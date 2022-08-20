@@ -16,7 +16,7 @@ const Header = () => {
 		<Popover className="relative">
 			{({ open }) => (
 				<>
-					<div className="max-w- mx-auto px-4 sm:px-6">
+					<div className="max-w- mx-auto px-4 sm:px-6 bg-primaryBackground">
 						<div className="flex justify-between items-center py-6 l">
 							{/* Logo */}
 							<div>
@@ -77,7 +77,7 @@ const Header = () => {
 														className="absolute z-10 left-1/2 transform -translate-x-1/2 mt-3 px-2 w-screen max-w-md sm:px-0"
 													>
 														<div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
-															<div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+															<div className="relative grid gap-6 bg-primaryBackground px-5 py-6 sm:gap-8 sm:p-8">
 																{more.map((item) => (
 																	<a
 																		key={item.name}
@@ -161,7 +161,7 @@ const Header = () => {
 										static
 										className="absolute top-0 inset-x-0 p-2 transition transform z-40 md:max-w-md md:left-auto md:w-full"
 									>
-										<div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+										<div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-primaryBackground divide-y-2 divide-gray-50">
 											<div className="pt-5 pb-6 px-5">
 												<div className="flex items-center justify-between">
 													<div>
@@ -174,7 +174,7 @@ const Header = () => {
 														/>
 													</div>
 													<div className="-mr-2">
-														<Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100">
+														<Popover.Button className="bg-primaryBackground rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100">
 															<span className="sr-only">Close menu</span>
 															<XIcon className="h-6 w-6" aria-hidden="true" />
 														</Popover.Button>

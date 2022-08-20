@@ -10,7 +10,7 @@ const Layout = ({ children, title = "Castlemartin" }) => (
 			<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 		</Head>
 		<Header />
-		<main>{children}</main>
+		<main className="bg-primaryBackground">{children}</main>
 		<Footer />
 	</>
 );

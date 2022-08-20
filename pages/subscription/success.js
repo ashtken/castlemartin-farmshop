@@ -7,7 +7,7 @@ function Success() {
 	const { data: session } = useSession();
 	return (
 		<Layout title="Success! | Castlemartin Farmshop">
-			<div className="flex justify-center my-24">
+			<div className="flex justify-center py-24">
 				<div className="inline-flex items-center flex-col">
 					<div>
 						<CheckIcon
